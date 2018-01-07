@@ -9,3 +9,21 @@ CREATE TABLE IF NOT EXISTS `lsp`
   CONSTRAINT LSP UNIQUE (lsp_name,device_id)
 ) 
 ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+INSERT INTO `graph_types`
+(
+  `graph_type`, 
+  `graph_subtype`, 
+  `graph_section`, 
+  `graph_descr`, 
+  `graph_order`
+) 
+VALUES 
+(
+  'device',  
+  'mpls_lsp',  
+  'network',  
+  'LSPs',  
+  ''
+);
