@@ -348,6 +348,11 @@ $config['graph_types']['device']['ipsystemstats_ipv6']['descr']        = 'IPv6 P
 $config['graph_types']['device']['ipsystemstats_ipv6_frag']['section'] = 'netstats';
 $config['graph_types']['device']['ipsystemstats_ipv6_frag']['order']   = '0';
 $config['graph_types']['device']['ipsystemstats_ipv6_frag']['descr']   = 'IPv6 Fragmentation Statistics';
+
+$config['graph_types']['device']['mpls_lsp']['section']         = 'netstats';
+$config['graph_types']['device']['mpls_lsp']['order']           = '0';
+$config['graph_types']['device']['mpls_lsp']['descr']           = 'MPLS LSP';
+
 $config['graph_types']['device']['netstat_icmp_info']['section']       = 'netstats';
 $config['graph_types']['device']['netstat_icmp_info']['order']         = '0';
 $config['graph_types']['device']['netstat_icmp_info']['descr']         = 'ICMP Informational Statistics';
