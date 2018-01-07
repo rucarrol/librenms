@@ -20,7 +20,7 @@ foreach ($pws as $pw) {
         ->addDataset('mplsLspPackets', 'COUNTER', 0, 10000000000)
         ->addDataset('mplsPathBandwidth', 'GAUGE', 0, 10000000000);
 
-    // JunOS returns LSP names padded out with '.'. No idea why. 
+    // JunOS returns LSP names padded out with '.'. No idea why.
     $lspName =  preg_replace("/\.+$/", "", $pw['mplsLspName']);
     $rrd_name = array('lsp-' . $lspName, $lspName, 0);
 
